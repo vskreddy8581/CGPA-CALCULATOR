@@ -150,4 +150,3 @@ This project demonstrates:
 * Responsive Web Design
 * JavaScript Calculations
 * Clean User Experience Design
-* 
