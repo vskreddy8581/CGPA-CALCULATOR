@@ -1,25 +1,26 @@
-# 🎓 CGPA Calculator
+# SGPA & CGPA Calculator
 
-A modern, responsive, and user-friendly CGPA Calculator built using **HTML5**, **CSS3**, and **JavaScript**. This application helps students calculate their CGPA quickly by entering subject credits and grades.
-
----
+A modern, responsive, and user-friendly **SGPA & CGPA Calculator** built using **HTML, CSS, and Vanilla JavaScript**. This tool allows students to add multiple semesters, enter subject details, select grades, assign credits, and instantly calculate semester-wise SGPA and overall CGPA. 
 
 ## 🚀 Features
 
-* Add unlimited subjects dynamically
-* Enter subject names
-* Select grades from a predefined grading system
+* Add unlimited semesters
+* Add multiple subjects for each semester
 * Enter subject credits
-* Automatic CGPA calculation
-* Academic performance evaluation
-* Remove individual subjects
+* Select grades using predefined grade points
+* Calculate:
+
+  * Semester-wise SGPA
+  * Overall CGPA
+  * Total Semesters
+  * Total Subjects
+  * Total Credits
+* Performance badge based on CGPA
 * Reset all data instantly
-* Responsive design for Desktop, Tablet, and Mobile
+* Fully responsive design for desktop and mobile
 * Clean and modern UI
 
----
-
-## 📊 Grade Mapping
+## 📚 Grade Point Mapping
 
 | Grade | Grade Point |
 | ----- | ----------- |
@@ -32,36 +33,18 @@ A modern, responsive, and user-friendly CGPA Calculator built using **HTML5**, *
 | C+    | 4           |
 | C     | 3           |
 
----
+## 🛠️ Technologies Used
 
-## 🧮 CGPA Formula
+* HTML5
+* CSS3
+* JavaScript (Vanilla JS)
 
-```text
-Credit Point = Credits × Grade Point
+The application uses dynamic DOM manipulation, event handling, form validation, and responsive layouts.  
 
-CGPA = Total Credit Points ÷ Total Credits
-```
-
-The CGPA is displayed up to **2 decimal places**.
-
----
-
-## 🏆 Performance Evaluation
-
-| CGPA Range | Performance             |
-| ---------- | ----------------------- |
-| ≥ 9.0      | Outstanding Performance |
-| ≥ 8.0      | Excellent Performance   |
-| ≥ 7.0      | Very Good Performance   |
-| ≥ 6.0      | Good Performance        |
-| < 6.0      | Needs Improvement       |
-
----
-
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```text
-CGPA-Calculator/
+SGPA-CGPA-Calculator/
 │
 ├── index.html
 ├── cgpa.css
@@ -69,84 +52,50 @@ CGPA-Calculator/
 └── README.md
 ```
 
----
+## 📖 How to Use
 
-## 🛠 Technologies Used
+1. Open the website.
+2. Add semesters if required.
+3. Add subjects under each semester.
+4. Enter:
 
-* HTML
-* CSS
-* JavaScript (ES6)
-* Flexbox
-* CSS Grid
-* Responsive Design
+   * Subject Name
+   * Credits
+   * Grade
+5. Click **Calculate CGPA**.
+6. View:
 
----
-
-## ▶️ How to Run
-
-1. Download or clone the repository.
-
-```bash
-git clone https://github.com/yourusername/cgpa-calculator.git
-```
-
-2. Open the project folder.
-
-3. Double-click `index.html`
-
-OR
-
-Open with Live Server in VS Code.
-
----
+   * Semester SGPA
+   * Total Credits
+   * Total Subjects
+   * Overall CGPA
+   * Performance Status
+7. Use **Reset All** to start again.
 
 ## 📱 Responsive Design
 
-The application is optimized for:
+The website is optimized for:
 
 * Desktop
 * Laptop
 * Tablet
 * Mobile Devices
 
----
+## 🎯 Performance Levels
 
-## 📸 Application Workflow
+| CGPA Range | Performance       |
+| ---------- | ----------------- |
+| 9.0+       | Outstanding       |
+| 8.0 – 8.99 | Excellent         |
+| 7.0 – 7.99 | Very Good         |
+| 6.0 – 6.99 | Good              |
+| Below 6.0  | Needs Improvement |
 
-1. Click **Add Subject**
-2. Enter Subject Name
-3. Enter Credits
-4. Select Grade
-5. Repeat for all subjects
-6. Click **Calculate CGPA**
-7. View:
+## 🌟 Future Enhancements
 
-   * Number of Subjects
-   * Total Credits
-   * CGPA
-   * Performance Remark
-
----
-
-## 🔄 Reset Functionality
-
-Click **Reset All** to:
-
-* Remove all subject rows
-* Clear results
-* Clear error messages
-* Start fresh
-
----
-
-## 🎯 Learning Outcomes
-
-This project demonstrates:
-
-* DOM Manipulation
-* Event Handling
-* Dynamic UI Generation
-* Form Validation
-* Responsive Web Design
-* JavaScript Calculations
-* Clean User Experience Design
+* Save results using Local Storage
+* Export results as PDF
+* Print mark sheet
+* Dark Mode
+* Percentage Calculator
+* GPA Trend Analysis
