@@ -1,6 +1,6 @@
 # SGPA & CGPA Calculator
 
-A modern, responsive, and user-friendly **SGPA & CGPA Calculator** built using **HTML, CSS, and Vanilla JavaScript**. This tool allows students to add multiple semesters, enter subject details, select grades, assign credits, and instantly calculate semester-wise SGPA and overall CGPA. 
+A modern, responsive, and user-friendly **SGPA & CGPA Calculator** built using **HTML, CSS, and JavaScript**. This tool allows students to add multiple semesters, enter subject details, select grades, assign credits, and instantly calculate semester-wise SGPA and overall CGPA. 
 
 ## 🚀 Features
 
