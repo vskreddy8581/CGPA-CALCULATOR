@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="cgpa.css">
+</head>
+
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="eyebrow">Academic Tool</div>
+        <h1>CGPA Calculator</h1>
+        <p>Add your subjects, pick grades and credits, then calculate your CGPA instantly.</p>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+        <div class="card">
+
+            <!-- Subjects Section -->
+            <div class="subjects-heading">
+                <div>
+                    <h2>Your Subjects</h2>
+                    <p>Fill in each subject row, then hit Calculate.</p>
+                </div>
+            </div>
+
+            <!-- Column headers -->
+            <div class="subjects-header">
+                <span>#</span>
+                <span>Subject Name</span>
+                <span>Credits</span>
+                <span>Grade</span>
+                <span></span>
+            </div>
+
+            <!-- Subject rows injected here -->
+            <div id="subjects-list"></div>
+
+            <!-- Add Subject button -->
+            <button class="btn btn-add" onclick="addSubjectRow()">&#43; Add Subject</button>
+
+            <!-- Action buttons -->
+            <div class="action-row">
+                <button class="btn btn-calculate" onclick="calculateCGPA()">&#x2713; Calculate CGPA</button>
+                <button class="btn btn-reset" onclick="resetAll()">&#x21BA; Reset All</button>
+            </div>
+
+            <!-- Error message -->
+            <div class="error-msg" id="error-msg"></div>
+
+            <!-- Result Section -->
+            <section id="result-section">
+                <hr class="divider" />
+                <div class="result-card">
+                    <h3>Your Results</h3>
+
+                    <div class="result-stats">
+                        <div class="stat-box">
+                            <div class="stat-value" id="res-subjects">—</div>
+                            <div class="stat-label">Subjects</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-value" id="res-credits">—</div>
+                            <div class="stat-label">Total Credits</div>
+                        </div>
+                        <div class="stat-box highlight">
+                            <div class="stat-value" id="res-cgpa">—</div>
+                            <div class="stat-label">CGPA</div>
+                        </div>
+                    </div>
+
+                    <div class="performance-badge" id="perf-badge">
+                        <div class="perf-dot"></div>
+                        <div>
+                            <div class="perf-text" id="perf-text">—</div>
+                            <div class="perf-sub" id="perf-sub">—</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <a href="https://digitalheroesco.com" target="_blank" rel="noopener noreferrer" class="hero-btn">Built for
+            Digital Heroes</a>
+        <p style="margin-top: 1px;">Designed for <span>Students</span> &mdash; compute smarter, score higher.</p>
+        <p class="author" >Created <strong style="color: rgb(101, 97, 97);">Vanukuri Siva Kishore Reddy</by:strong></p>
+        <p style="color:black">Email:<a href="mailto:vskreddy8581@gmail.com"
+                style="color:#4f6ef7; text-decoration:none; font-weight:600;">vskreddy8581@gmail.com</a></p>
+    </footer>
+
+    <script src="cgpa.js"></script>
+</body>
+
+</html>
